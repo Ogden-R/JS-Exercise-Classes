@@ -59,7 +59,7 @@ class Person {
     return `${this.name}, ${this.age}`;
   }
 }
-/*
+
   const andrew = new Person('Andrew', 27);
   const jessie = new Person('Jessie', 26);
 
@@ -77,7 +77,7 @@ class Person {
   andrew.poop();
   console.log(andrew.stomach);
   console.log(andrew.toString());
-*/
+
 
 /*
   TASK 2
@@ -131,8 +131,8 @@ class Car {
 */
 class Lambdasian {
   constructor(attributes){
-    this.name = attributes.name,
-    this.age = attributes.age,
+    this.name = attributes.name;
+    this.age = attributes.age;
     this.location = attributes.location;
   }
   speak(){
@@ -189,6 +189,7 @@ console.log("Task 4:", brit);
 console.log(brit.speak());
 console.log(brit.grade(becca, 'HTML'));
 console.log(brit.demo('JavaScript'));
+
 /*
   TASK 5
     - Write a Student class extending Lambdasian.
@@ -262,6 +263,22 @@ debugsCode(student, subject){
  return `${this.name} debugs ${student.name}'s code on ${subject}`;
 } 
 }
+const kieran = new ProjectManager({
+  name:'Kieran',
+  age: 30,
+  location: 'Pittsburgh',
+  specialty:'teaching',
+  favLanguage:'JavaScript',
+  catchPhrase:'i think so, but let me check',
+  gradClassName: 'Web32',
+  favInstructor: 'Brit'
+});
+console.log("Task 6:", kieran);
+console.log(kieran.speak());
+console.log(kieran.grade(becca, 'HTML'));
+console.log(kieran.demo('JavaScript'));
+console.log(kieran.standUp('Web46-help'));
+console.log(kieran.debugsCode(rebecca,'JavaScript'));
 /*
   STRETCH PROBLEM (no tests!)
     - Extend the functionality of the Student by adding a prop called grade and setting it equal to a number between 1-100.
